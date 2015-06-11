@@ -2,6 +2,7 @@
 Search/access [The Medical Journal of Australia's](https://www.mja.com.au) database of journals using web scraping in R.
 
 ##Usage
+`install_github('akshaynagpal/mjar')`
 
 `my_query <- search_MJA("heart rate")`
 
