@@ -1,5 +1,5 @@
 # mjar
-Medical Journal Australia data access in R
+Medical Journal Australia(https://www.mja.com.au) journal search/access using web scraping in R.
 
 ##Usage
 
