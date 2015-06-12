@@ -63,7 +63,7 @@ search_MJA <-function(userQuery){
   mjaSearch <- read_html(paste(baseURL,userQuery,articleType,sep = ""))
   title<-getTitles(mjaSearch)[1:10]
   link<- getLinks(mjaSearch)[1:10]
-  abstract<-getAbstracts(links)
+  abstract<-getAbstracts(link)
 
   searchResult<-cbind(title,link,abstract)
   return(searchResult)
