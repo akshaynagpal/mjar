@@ -3,6 +3,7 @@ Search/access [The Medical Journal of Australia's](https://www.mja.com.au) datab
 
 ##Installation
 `library(devtools)`
+
 `install_github('akshaynagpal/mjar')`
 ##Usage
 `my_query <- search_MJA("heart rate")`
