@@ -12,7 +12,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">mjar</h1>
-      <h2 class="project-tagline">Talk to <a href="https://www.mja.com.au" style="color:#ffffff">MJA</a> in R.</h2>
+      <h2 class="project-tagline">Talk to MJA in R.</h2>
       <a href="https://github.com/akshaynagpal/mjar" class="btn">View on GitHub</a>
       <a href="https://github.com/akshaynagpal/mjar/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/akshaynagpal/mjar/tarball/master" class="btn">Download .tar.gz</a>
@@ -25,13 +25,27 @@
 <p>Search/access <a href="https://www.mja.com.au">The Medical Journal of Australia's</a> database of journals using web scraping in R.</p>
 
 <h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p><code>install_github('akshaynagpal/mjar')</code></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p><code>my_query &lt;- search_MJA("heart rate")</code></p>
 
 <p>This will provide the output in the form of a <code>matrix</code> containing 3 columns - <code>titles, links, abstracts</code> of top 10 articles matching the user input ("heart rate" in above example).</p>
+
+<h3>
+<a id="selecting-from-the-matrix" class="anchor" href="#selecting-from-the-matrix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selecting from the matrix</h3>
+
+<p>Using basic matrix access syntax of R, you can access specific information from the matrix returned in the variable (<code>my_query</code> in this case)</p>
+
+<ul>
+<li><p>To select all the titles, you can use <code>my_query[,c('title')]</code></p></li>
+<li><p>To select all the titles and abstracts from the search resull, you can use <code>my_query[,c('title','abstract')]</code></p></li>
+<li><p>To select title and link from the second row, you can use <code>my_query[2,c('title','abstract')]</code></p></li>
+</ul>
 
 <h2>
 <a id="copyright" class="anchor" href="#copyright" aria-hidden="true"><span class="octicon octicon-link"></span></a>Copyright</h2>
@@ -68,7 +82,17 @@ SOFTWARE.</p>
 
     </section>
 
-  
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-41230317-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
 
