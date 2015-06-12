@@ -61,11 +61,11 @@ search_MJA <-function(userQuery){
   baseURL <- "https://www.mja.com.au/search/site/"
   articleType <- "?f[0]=im_field_article_type%3A5269"
   mjaSearch <- read_html(paste(baseURL,userQuery,articleType,sep = ""))
-  titles<-getTitles(mjaSearch)[1:10]
-  links<- getLinks(mjaSearch)[1:10]
-  abstracts<-getAbstracts(links)
+  title<-getTitles(mjaSearch)[1:10]
+  link<- getLinks(mjaSearch)[1:10]
+  abstract<-getAbstracts(links)
 
-  searchResult<-cbind(titles,links,abstracts)
+  searchResult<-cbind(title,link,abstract)
   return(searchResult)
 }
 
