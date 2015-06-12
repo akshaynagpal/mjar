@@ -26,6 +26,7 @@ getLinks <- function(mjaSearch){
   links <- mjaSearch %>%
     html_nodes("#block-system-main div ol li h3 a ")%>%
     html_attr("href")
+  return(links)
 }
 
 #'getAbstracts function
