@@ -1,12 +1,20 @@
 # mjar
 Search/access [The Medical Journal of Australia's](https://www.mja.com.au) database of journals using web scraping in R.
 
-##Usage
+##Installation
 `install_github('akshaynagpal/mjar')`
-
+##Usage
 `my_query <- search_MJA("heart rate")`
 
 This will provide the output in the form of a `matrix` containing 3 columns - `titles, links, abstracts` of top 10 articles matching the user input ("heart rate" in above example).
+
+###Selecting from the matrix
+Using basic matrix access syntax of R, you can access specific information from the matrix returned in the variable (`my_query` in this case)
+To select all the titles, you can use `my_query[,c('title')]`
+
+To select all the titles and abstracts from the search resull, you can use `my_query[,c('title','abstract')]`
+
+To select title and link from the second row, you can use `my_query[2,c('title','abstract')]`
 
 ##Copyright
 >
