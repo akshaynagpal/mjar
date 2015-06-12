@@ -4,6 +4,6 @@ Version: 0.0.0.9000
 Authors@R: person("Akshay", "Nagpal", email = "akshay2626@gmail.com", role = c("aut", "cre"))
 Maintainer: Akshay Nagpal <akshay2626@gmail.com>
 Description: Search/access The Medical Journal of Australia's database of journals using web scraping in R.
-Depends: R (>= 3.2.0)
+Depends: R (>= 3.2.0), rvest
 License: MIT
 LazyData: true
