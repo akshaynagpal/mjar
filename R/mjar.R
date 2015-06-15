@@ -65,8 +65,8 @@ search_MJA <-function(userQuery){
   title<-getTitles(mjaSearch)[1:10]
   link<- getLinks(mjaSearch)[1:10]
   abstract<-getAbstracts(link)
-
-  searchResult<-cbind(title,link,abstract)
+  searchResult <- data.frame(title,link,abstract)
+  #searchResult<-cbind(title,link,abstract)
   return(searchResult)
 }
 
