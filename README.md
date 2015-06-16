@@ -1,4 +1,6 @@
+
 # mjar
+[![Build Status](https://travis-ci.org/akshaynagpal/mjar.svg)](https://travis-ci.org/akshaynagpal/mjar)
 Search/access [The Medical Journal of Australia's](https://www.mja.com.au) database of journals using web scraping in R.
 
 ##Usage
@@ -6,7 +8,7 @@ Search/access [The Medical Journal of Australia's](https://www.mja.com.au) datab
 
 `my_query <- search_MJA("heart rate")`
 
-This will provide the output in the form of a `matrix` containing 3 columns - `titles, links, abstracts` of top 10 articles matching the user input ("heart rate" in above example).
+This will provide the output in the form of a `data.frame` containing 3 columns - `titles, links, abstracts` of top 10 articles matching the user input ("heart rate" in above example).
 
 ##Copyright
 >
