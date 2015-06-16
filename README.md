@@ -1,6 +1,7 @@
 
 # mjar
-[![Build Status](https://travis-ci.org/akshaynagpal/mjar.svg)](https://travis-ci.org/akshaynagpal/mjar)
+[![Build Status](https://travis-ci.org/akshaynagpal/mjar.svg)](https://travis-ci.org/akshaynagpal/mjar)    
+
 Search/access [The Medical Journal of Australia's](https://www.mja.com.au) database of journals using web scraping in R.
 
 ##Installation
