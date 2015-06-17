@@ -2,7 +2,7 @@ library(rvest)
 #'getTitles function
 #'
 #'This function scrapes the titles of the papers matching the search input of the user.
-#'@param mjaSearch search URL.
+#'@param mjaSearch HTML content of the search URL
 #'@export
 #'@examples
 #'getTitles()
@@ -17,7 +17,7 @@ getTitles <- function(mjaSearch){
 #'getLinks function
 #'
 #'This function scrapes the URLs of the papers matching the search input of the user.
-#'@param mjaSearch search URL.
+#'@param mjaSearch HTML content of the search URL
 #'@export
 #'@examples
 #'getLinks()
