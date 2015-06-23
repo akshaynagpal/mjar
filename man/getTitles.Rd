@@ -7,7 +7,7 @@
 getTitles(mjaSearch)
 }
 \arguments{
-\item{mjaSearch}{search URL.}
+\item{mjaSearch}{HTML content of the search URL}
 }
 \description{
 This function scrapes the titles of the papers matching the search input of the user.

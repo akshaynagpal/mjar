@@ -2,7 +2,7 @@ library(rvest)
 #'getTitles function
 #'
 #'This function scrapes the titles of the papers matching the search input of the user.
-#'@param mjaSearch search URL.
+#'@param mjaSearch HTML content of the search URL
 #'@export
 #'@examples
 #'getTitles()
@@ -17,7 +17,7 @@ getTitles <- function(mjaSearch){
 #'getLinks function
 #'
 #'This function scrapes the URLs of the papers matching the search input of the user.
-#'@param mjaSearch search URL.
+#'@param mjaSearch HTML content of the search URL
 #'@export
 #'@examples
 #'getLinks()
@@ -65,8 +65,9 @@ search_MJA <-function(userQuery){
   title<-getTitles(mjaSearch)[1:10]
   link<- getLinks(mjaSearch)[1:10]
   abstract<-getAbstracts(link)
-
-  searchResult<-cbind(title,link,abstract)
+  searchResult <- data.frame(title,link,abstract)
+  colnames(searchResult) <- c('title','link','abstract')
+  #searchResult<-cbind(title,link,abstract)
   return(searchResult)
 }
 
